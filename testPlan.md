@@ -19,6 +19,7 @@ This document is meant for internal use primarily.
 - **tbd**	to be determined
 ### 1.5	 References
 - [GitHub](https://github.com/tomorow94/GardeningPlaner)
+- [SRS](https://github.com/tomorow94/GardeningPlaner/blob/master/SoftwareRequirementsSpecification.md)
 
 ### 1.6 Document Structure
 tbd
