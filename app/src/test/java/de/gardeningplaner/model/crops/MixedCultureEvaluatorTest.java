@@ -1,4 +1,4 @@
-package de.GardeningPlaner.Model.Crops;
+package de.gardeningplaner.model.crops;
 
 import org.junit.Test;
 

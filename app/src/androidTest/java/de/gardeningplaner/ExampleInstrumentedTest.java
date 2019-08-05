@@ -1,4 +1,4 @@
-package de.GardeningPlaner;
+package de.gardeningplaner;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

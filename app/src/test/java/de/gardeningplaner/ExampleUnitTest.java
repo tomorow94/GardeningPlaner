@@ -1,4 +1,4 @@
-package de.GardeningPlaner;
+package de.gardeningplaner;
 
 import org.junit.Test;
 

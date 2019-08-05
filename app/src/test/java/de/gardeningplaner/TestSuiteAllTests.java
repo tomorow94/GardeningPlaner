@@ -1,9 +1,9 @@
-package de.GardeningPlaner;
+package de.gardeningplaner;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
-import de.GardeningPlaner.Model.Crops.TestSuiteCrops;
+import de.gardeningplaner.model.crops.TestSuiteCrops;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
@@ -11,5 +11,6 @@ import de.GardeningPlaner.Model.Crops.TestSuiteCrops;
                 TestSuiteCrops.class
         }
 )
+
 public class TestSuiteAllTests {
 }

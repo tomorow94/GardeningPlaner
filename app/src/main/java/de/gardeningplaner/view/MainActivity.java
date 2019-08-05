@@ -1,9 +1,9 @@
-package de.GardeningPlaner.View;
+package de.gardeningplaner.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import de.GardeningPlaner.R;
+import de.gardeningplaner.R;
 
 public class MainActivity extends AppCompatActivity {
 
