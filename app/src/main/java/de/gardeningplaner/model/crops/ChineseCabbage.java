@@ -1,7 +1,7 @@
 package de.gardeningplaner.model.crops;
 
 public class ChineseCabbage extends Crop {
-    protected ChineseCabbage(){
+    public ChineseCabbage(){
         super(RootLevel.MEDIUM, 35, NutriendNeeds.HIGH, "Chinakohl");
     }
 }
