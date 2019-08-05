@@ -32,444 +32,444 @@ public class MixedCultureEvaluator {
     };
 
     CropTolerance evaluateTolerance(Crop crop1, Crop crop2){
-        String _crop1 = crop1.getName();
-        String _crop2 = crop2.getName();
+        String crop1Name = crop1.getName();
+        String crop2Name = crop2.getName();
 
-        if (_crop1.equals(crops[0])){
-            if(_crop2.equals(crops[11])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[22])){
+        if (crop1Name.equals(crops[0])){
+            if(crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[9])){
+            if(crop2Name.equals(crops[9])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[1])){
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[9])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[15])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[19])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[22])){
+        if (crop1Name.equals(crops[1])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[15])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[19])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[4])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[23])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[23])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[2])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[22])){
+        if (crop1Name.equals(crops[2])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[11])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[18])){
+            if(crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[18])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[3])){
-            if(_crop2.equals(crops[7])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[3])){
+            if(crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[4])){
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[24])){
+        if (crop1Name.equals(crops[4])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[24])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[9])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[23])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[23])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[5])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[5])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[6])){
-            if(_crop2.equals(crops[5])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[23])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[6])){
+            if(crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[23])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[7])){
-            if(_crop2.equals(crops[3])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[20])){
+        if (crop1Name.equals(crops[7])){
+            if(crop2Name.equals(crops[3])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[20])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[23])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[8])){
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[23])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[8])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[23])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[9])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[24])){
+            if(crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[24])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[9])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[16])){
+        if (crop1Name.equals(crops[9])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[16])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[0])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[0])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[10])){
-            if(_crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[10])){
+            if(crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[23])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[11])){
-            if(_crop2.equals(crops[0])
-                    || _crop2.equals(crops[1])
-                    || _crop2.equals(crops[3])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[19])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[11])){
+            if(crop2Name.equals(crops[0])
+                    || crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[3])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[19])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[12])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[9])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[12])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[11])){
+            if(crop2Name.equals(crops[11])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[13])){
-            if(_crop2.equals(crops[0])
-                    || _crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[19])
-                    || _crop2.equals(crops[23])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[13])){
+            if(crop2Name.equals(crops[0])
+                    || crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[19])
+                    || crop2Name.equals(crops[23])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[14])){
-            if(_crop2.equals(crops[3])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[21])){
+        if (crop1Name.equals(crops[14])){
+            if(crop2Name.equals(crops[3])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[21])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[2])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[23])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[15])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[15])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[20])
-                    || _crop2.equals(crops[22])){
+            if(crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[16])){
-            if(_crop2.equals(crops[9])){
+        if (crop1Name.equals(crops[16])){
+            if(crop2Name.equals(crops[9])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[17])){
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[15])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[17])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[15])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[21])){
+            if(crop2Name.equals(crops[21])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[18])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[15])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[18])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[15])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[2])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[19])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[22])){
+        if (crop1Name.equals(crops[19])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.SUPPORTIVE;
             }
         }
 
-        if (_crop1.equals(crops[20])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[24])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[20])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[24])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[9])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[15])
-                    || _crop2.equals(crops[22])){
+            if(crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[15])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[21])){
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[22])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[21])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[22])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[9])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[21])){
+            if(crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[21])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[22])){
-            if(_crop2.equals(crops[0])
-                    || _crop2.equals(crops[1])
-                    || _crop2.equals(crops[2])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[9])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[12])
-                    || _crop2.equals(crops[13])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[19])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[23])){
+        if (crop1Name.equals(crops[22])){
+            if(crop2Name.equals(crops[0])
+                    || crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[2])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[12])
+                    || crop2Name.equals(crops[13])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[19])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[15])
-                    || _crop2.equals(crops[20])){
+            if(crop2Name.equals(crops[15])
+                    || crop2Name.equals(crops[20])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[23])){
-            if(_crop2.equals(crops[3])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[19])
-                    || _crop2.equals(crops[21])
-                    || _crop2.equals(crops[22])){
+        if (crop1Name.equals(crops[23])){
+            if(crop2Name.equals(crops[3])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[19])
+                    || crop2Name.equals(crops[21])
+                    || crop2Name.equals(crops[22])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[7])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[14])
-                    || _crop2.equals(crops[25])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[7])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[14])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[24])){
-            if(_crop2.equals(crops[4])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[25])){
+        if (crop1Name.equals(crops[24])){
+            if(crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[25])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[8])){
+            if(crop2Name.equals(crops[8])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
 
-        if (_crop1.equals(crops[25])){
-            if(_crop2.equals(crops[5])
-                    || _crop2.equals(crops[6])
-                    || _crop2.equals(crops[8])
-                    || _crop2.equals(crops[10])
-                    || _crop2.equals(crops[17])
-                    || _crop2.equals(crops[20])
-                    || _crop2.equals(crops[24])){
+        if (crop1Name.equals(crops[25])){
+            if(crop2Name.equals(crops[5])
+                    || crop2Name.equals(crops[6])
+                    || crop2Name.equals(crops[8])
+                    || crop2Name.equals(crops[10])
+                    || crop2Name.equals(crops[17])
+                    || crop2Name.equals(crops[20])
+                    || crop2Name.equals(crops[24])){
                 return CropTolerance.SUPPORTIVE;
             }
-            if(_crop2.equals(crops[1])
-                    || _crop2.equals(crops[4])
-                    || _crop2.equals(crops[9])
-                    || _crop2.equals(crops[11])
-                    || _crop2.equals(crops[18])
-                    || _crop2.equals(crops[23])){
+            if(crop2Name.equals(crops[1])
+                    || crop2Name.equals(crops[4])
+                    || crop2Name.equals(crops[9])
+                    || crop2Name.equals(crops[11])
+                    || crop2Name.equals(crops[18])
+                    || crop2Name.equals(crops[23])){
                 return CropTolerance.OBSTRUCTIVE;
             }
         }
