@@ -2,13 +2,12 @@ package de.gardeningplaner.model;
 
 import org.junit.Test;
 
-import de.gardeningplaner.model.MixedCultureEvaluator;
 import de.gardeningplaner.model.crops.Aubergine;
 import de.gardeningplaner.model.crops.BushBean;
 import de.gardeningplaner.model.crops.ChineseCabbage;
 import de.gardeningplaner.model.crops.CropTolerance;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MixedCultureEvaluatorTest {
 
