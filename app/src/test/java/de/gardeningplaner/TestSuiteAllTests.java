@@ -3,12 +3,12 @@ package de.gardeningplaner;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
-import de.gardeningplaner.model.crops.TestSuiteCrops;
+import de.gardeningplaner.model.TestSuiteModels;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
         {
-                TestSuiteCrops.class
+                TestSuiteModels.class
         }
 )
 

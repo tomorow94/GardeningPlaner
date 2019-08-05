@@ -1,4 +1,7 @@
-package de.gardeningplaner.model.crops;
+package de.gardeningplaner.model;
+
+import de.gardeningplaner.model.crops.Crop;
+import de.gardeningplaner.model.crops.CropTolerance;
 
 public class MixedCultureEvaluator {
 
