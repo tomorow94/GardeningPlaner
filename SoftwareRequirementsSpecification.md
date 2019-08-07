@@ -1,8 +1,8 @@
 # Software Requirements Specification
 
-# For Gardening Planer
+## For Gardening Planer
 
-### By tomorow94
+ By tomorow94
 
 # <a name="1. Introduction">1. Introduction</a>
 
