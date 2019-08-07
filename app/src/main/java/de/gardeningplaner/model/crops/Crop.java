@@ -3,10 +3,10 @@ package de.gardeningplaner.model.crops;
 public abstract class Crop {
     private RootLevel rootLevel;
     private int extend;
-    private NutriendNeeds nutrition;
+    private NutrientNeeds nutrition;
     private String name;
 
-    protected Crop(RootLevel rootLevel, int extend, NutriendNeeds nutrition, String name) {
+    protected Crop(RootLevel rootLevel, int extend, NutrientNeeds nutrition, String name) {
         this.rootLevel = rootLevel;
         this.extend = extend;
         this.nutrition = nutrition;
@@ -21,7 +21,7 @@ public abstract class Crop {
         return extend;
     }
 
-    public NutriendNeeds getNutrition() {
+    public NutrientNeeds getNutrientNeeds() {
         return nutrition;
     }
 

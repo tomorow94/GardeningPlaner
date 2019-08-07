@@ -1,8 +1,6 @@
 
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-s
-Capp/src/main/java/de/gardeningplaner/model/crops/NutriendNeeds.java,9\d\9de7223fe974041f2928b03a2810d80d5646f858
 o
 ?app/src/main/java/de/gardeningplaner/model/crops/RootLevel.java,0\1\018d362146ff595e1bf5a6765b00fa923e781597
 s
@@ -27,3 +25,7 @@ o
 ?app/src/main/java/de/gardeningplaner/model/crops/Aubergine.java,f\b\fb55d1dbb30f646a8b75a956c9e218800b958b3b
 j
 :app/src/main/java/de/gardeningplaner/model/crops/Crop.java,6\9\69102c87a56e81f906e4d8a94de4cc770d5c508b
+s
+Capp/src/test/java/de/gardeningplaner/model/crops/AubergineTest.java,8\9\8961499cd35217869eb24aff3a7a65778b36081a
+s
+Capp/src/main/java/de/gardeningplaner/model/crops/NutrientNeeds.java,c\7\c77beff2cf22905a0e053bb118645ffe866f2cda

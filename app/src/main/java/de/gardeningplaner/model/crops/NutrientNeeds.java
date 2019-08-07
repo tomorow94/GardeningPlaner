@@ -1,6 +1,6 @@
 package de.gardeningplaner.model.crops;
 
-public enum NutriendNeeds {
+public enum NutrientNeeds {
     HIGH,
     MEDIUM,
     LOW
