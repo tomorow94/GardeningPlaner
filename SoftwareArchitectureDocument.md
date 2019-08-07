@@ -15,7 +15,6 @@ This document is closely related to the Software Requirement Specifications and 
 ### 1.4	References
 *  Github Repository: https://github.com/tomorow94/GardeningPlaner
 
-
 ### 1.5	Overview
 This Document contains information about the software architecture. In more details, you can find information about Architectural Representation, Architectural Goals and Constraints, Use-Case View,
 Logical View, Process View, Deployment View, Implementation View, Data View, Size and Performance and Quality.
