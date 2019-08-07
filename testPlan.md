@@ -126,7 +126,7 @@ n/a
 ## 8.	Testing Workflow
 n/a
 ## 9.	Environmental Needs
-[This section presents the non-human resources required for the Test Plan.]
+This section presents the non-human resources required for the Test Plan.
 ### 9.1	Base System Hardware
 tbd
 ### 9.2	Base Software Elements in the Test Environment
@@ -140,7 +140,6 @@ n/a
 This table shows the staffing assumptions for the test effort.
 
 Human Resources
-
 
 | Role | Minimum Resources Recommended (number of full-time roles allocated) |	Specific Responsibilities or Comments |
 |---|---|---|
