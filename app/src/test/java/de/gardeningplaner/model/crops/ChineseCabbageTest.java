@@ -5,18 +5,17 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class AubergineTest {
-
+public class ChineseCabbageTest {
     private Crop crop;
 
     @Before
     public void setUp() throws Exception {
-        crop = new Aubergine();
+        crop = new ChineseCabbage();
     }
 
     @Test
-    public void getName_shouldReturnString_Aubergine(){
-        String expected = "Aubergine";
+    public void getName_shouldReturnString_Chinakohl(){
+        String expected = "Chinakohl";
 
         String actual = crop.getName();
 
@@ -44,8 +43,8 @@ public class AubergineTest {
     }
 
     @Test
-    public void getExtend_shouldReturnInteger_50(){
-        int expected = 50;
+    public void getExtend_shouldReturnInteger_35(){
+        int expected = 35;
 
         int actual = crop.getExtend();
 

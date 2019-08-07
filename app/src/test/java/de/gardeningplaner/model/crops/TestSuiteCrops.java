@@ -8,7 +8,9 @@ import de.gardeningplaner.model.MixedCultureEvaluatorTest;
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
         {
-
+                AubergineTest.class,
+                BushBeanTest.class,
+                ChineseCabbageTest.class
         }
 )
 
