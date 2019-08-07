@@ -29,3 +29,9 @@ s
 Capp/src/test/java/de/gardeningplaner/model/crops/AubergineTest.java,8\9\8961499cd35217869eb24aff3a7a65778b36081a
 s
 Capp/src/main/java/de/gardeningplaner/model/crops/NutrientNeeds.java,c\7\c77beff2cf22905a0e053bb118645ffe866f2cda
+r
+Bapp/src/test/java/de/gardeningplaner/model/crops/BushBeanTest.java,1\8\184017cb135d5d1db86c1960a7e35c7bc7735fbd
+x
+Happ/src/test/java/de/gardeningplaner/model/crops/ChineseCabbageTest.java,8\8\88cb38b42e9b0919298cb7891db8a41c5854265c
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
