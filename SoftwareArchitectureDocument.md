@@ -1,6 +1,5 @@
 # Software Architecture Document
 
-
 ## 1. Introduction
 
 ### 1.1	Purpose
@@ -10,11 +9,11 @@ This document provides a comprehensive architectural overview of the system, usi
 This document is closely related to the Software Requirement Specifications and it's defined Use Cases. You can find both in the GitHub repository of this Project (See 1.4: References). 
  
 ### 1.3	Definitions, Acronyms, and Abbreviations
-* MVC = Model View Controller
-* N.a = Not applicable / Not available
+*  MVC = Model View Controller
+*  N.a = Not applicable / Not available
 
 ### 1.4	References
-* Github Repository: https://github.com/tomorow94/GardeningPlaner
+*  Github Repository: https://github.com/tomorow94/GardeningPlaner
 
 
 ### 1.5	Overview
@@ -22,12 +21,12 @@ This Document contains information about the software architecture. In more deta
 Logical View, Process View, Deployment View, Implementation View, Data View, Size and Performance and Quality.
 
 ### 1.6 Tech Stack
-* Java ver. 1.8
-* JUnit ver. 4.12
-* Android ver. 28.0.0
-* AndroidStudio ver. 3.4.2
-* Graddle ver. 3.4.2
-* GitHub
+*  Java ver. 1.8
+*  JUnit ver. 4.12
+*  Android ver. 28.0.0
+*  AndroidStudio ver. 3.4.2
+*  Graddle ver. 3.4.2
+*  GitHub
 
 ## 2. Architectural Representation
 This section describes what software architecture is for the current system.
