@@ -10,8 +10,8 @@ android:
 addons:
   sonarcloud:
     organization: "tomorow94" # the key of the org you chose at step #3
-    token:
-      secure: $SONAR_TOKEN # encrypted value of your token
+    token: $SONAR_TOKEN
+      #secure: $SONAR_TOKEN # encrypted value of your token
 
 before_script:
   - chmod +x gradlew
