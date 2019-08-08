@@ -10,7 +10,8 @@ android:
 addons:
   sonarcloud:
     organization: "tomorow94" # the key of the org you chose at step #3
-    token: $SONAR_TOKEN
+    token:
+      secure: $SONAR_TOKEN2 # encrypted value of your token
       #secure: $SONAR_TOKEN # encrypted value of your token
 
 before_script:
@@ -19,7 +20,8 @@ before_script:
 script:
     - echo "starting script"
     - ./gradlew clean build
-    - sonar-scanner
+    - ./gradlew sonarqube
+    #- sonar-scanner
 # Emulator Management: Create, Start and Wait
 #before_script:
 #    - echo "Starting emulator"
