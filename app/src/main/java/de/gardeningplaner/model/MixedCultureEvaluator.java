@@ -89,13 +89,11 @@ public class MixedCultureEvaluator {
             }
         }
 
-        if (crop1Name.equals(crops[3])){
-            if(crop2Name.equals(crops[7])
-                    || crop2Name.equals(crops[11])
-                    || crop2Name.equals(crops[14])
-                    || crop2Name.equals(crops[23])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[3]) && (crop2Name.equals(crops[7])
+                || crop2Name.equals(crops[11])
+                || crop2Name.equals(crops[14])
+                || crop2Name.equals(crops[23]))) {
+            return CropTolerance.SUPPORTIVE;
         }
 
         if (crop1Name.equals(crops[4])){
@@ -121,33 +119,29 @@ public class MixedCultureEvaluator {
             }
         }
 
-        if (crop1Name.equals(crops[5])){
-            if(crop2Name.equals(crops[1])
-                    || crop2Name.equals(crops[6])
-                    || crop2Name.equals(crops[10])
-                    || crop2Name.equals(crops[11])
-                    || crop2Name.equals(crops[13])
-                    || crop2Name.equals(crops[14])
-                    || crop2Name.equals(crops[18])
-                    || crop2Name.equals(crops[20])
-                    || crop2Name.equals(crops[22])
-                    || crop2Name.equals(crops[25])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[5]) && (crop2Name.equals(crops[1])
+                || crop2Name.equals(crops[6])
+                || crop2Name.equals(crops[10])
+                || crop2Name.equals(crops[11])
+                || crop2Name.equals(crops[13])
+                || crop2Name.equals(crops[14])
+                || crop2Name.equals(crops[18])
+                || crop2Name.equals(crops[20])
+                || crop2Name.equals(crops[22])
+                || crop2Name.equals(crops[25]))) {
+            return CropTolerance.SUPPORTIVE;
         }
 
-        if (crop1Name.equals(crops[6])){
-            if(crop2Name.equals(crops[5])
-                    || crop2Name.equals(crops[7])
-                    || crop2Name.equals(crops[11])
-                    || crop2Name.equals(crops[12])
-                    || crop2Name.equals(crops[14])
-                    || crop2Name.equals(crops[18])
-                    || crop2Name.equals(crops[22])
-                    || crop2Name.equals(crops[23])
-                    || crop2Name.equals(crops[25])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[6]) && (crop2Name.equals(crops[5])
+                || crop2Name.equals(crops[7])
+                || crop2Name.equals(crops[11])
+                || crop2Name.equals(crops[12])
+                || crop2Name.equals(crops[14])
+                || crop2Name.equals(crops[18])
+                || crop2Name.equals(crops[22])
+                || crop2Name.equals(crops[23])
+                || crop2Name.equals(crops[25]))) {
+            return CropTolerance.SUPPORTIVE;
         }
 
         if (crop1Name.equals(crops[7])){
@@ -263,23 +257,21 @@ public class MixedCultureEvaluator {
             }
         }
 
-        if (crop1Name.equals(crops[13])){
-            if(crop2Name.equals(crops[0])
-                    || crop2Name.equals(crops[1])
-                    || crop2Name.equals(crops[4])
-                    || crop2Name.equals(crops[5])
-                    || crop2Name.equals(crops[7])
-                    || crop2Name.equals(crops[8])
-                    || crop2Name.equals(crops[11])
-                    || crop2Name.equals(crops[12])
-                    || crop2Name.equals(crops[14])
-                    || crop2Name.equals(crops[17])
-                    || crop2Name.equals(crops[18])
-                    || crop2Name.equals(crops[19])
-                    || crop2Name.equals(crops[23])
-                    || crop2Name.equals(crops[25])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[13]) && (crop2Name.equals(crops[0])
+                || crop2Name.equals(crops[1])
+                || crop2Name.equals(crops[4])
+                || crop2Name.equals(crops[5])
+                || crop2Name.equals(crops[7])
+                || crop2Name.equals(crops[8])
+                || crop2Name.equals(crops[11])
+                || crop2Name.equals(crops[12])
+                || crop2Name.equals(crops[14])
+                || crop2Name.equals(crops[17])
+                || crop2Name.equals(crops[18])
+                || crop2Name.equals(crops[19])
+                || crop2Name.equals(crops[23])
+                || crop2Name.equals(crops[25]))) {
+            return CropTolerance.SUPPORTIVE;
         }
 
         if (crop1Name.equals(crops[14])){
@@ -316,10 +308,8 @@ public class MixedCultureEvaluator {
             }
         }
 
-        if (crop1Name.equals(crops[16])){
-            if(crop2Name.equals(crops[9])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[16]) && crop2Name.equals(crops[9])) {
+            return CropTolerance.SUPPORTIVE;
         }
 
         if (crop1Name.equals(crops[17])){
@@ -358,13 +348,11 @@ public class MixedCultureEvaluator {
             }
         }
 
-        if (crop1Name.equals(crops[19])){
-            if(crop2Name.equals(crops[1])
-                    || crop2Name.equals(crops[11])
-                    || crop2Name.equals(crops[13])
-                    || crop2Name.equals(crops[22])){
-                return CropTolerance.SUPPORTIVE;
-            }
+        if (crop1Name.equals(crops[19]) && (crop2Name.equals(crops[1])
+                || crop2Name.equals(crops[11])
+                || crop2Name.equals(crops[13])
+                || crop2Name.equals(crops[22]))) {
+            return CropTolerance.SUPPORTIVE;
         }
 
         if (crop1Name.equals(crops[20])){
