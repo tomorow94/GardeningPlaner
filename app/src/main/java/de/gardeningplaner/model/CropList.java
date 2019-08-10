@@ -1,6 +1,8 @@
 package de.gardeningplaner.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 import de.gardeningplaner.model.crops.Aubergine;
 import de.gardeningplaner.model.crops.Beetroot;
@@ -30,12 +32,12 @@ import de.gardeningplaner.model.crops.Spinach;
 import de.gardeningplaner.model.crops.Strawberry;
 import de.gardeningplaner.model.crops.Zucchini;
 
-public class CropList extends ArrayList{
+public class CropList extends ArrayList implements Serializable{
     private ArrayList<Crop> cropArrayList;
 
-    public CropList() {
+    CropList() {
         this.cropArrayList = new ArrayList<>();
-        
+
         this.cropArrayList.add(new Aubergine());        //0
         this.cropArrayList.add(new BushBean());         //1
         this.cropArrayList.add(new ChineseCabbage());   //2
@@ -64,7 +66,7 @@ public class CropList extends ArrayList{
         this.cropArrayList.add(new Onion());            //25
     }
 
-    public ArrayList<Crop> getCropArrayList() {
+    public List<Crop> get() {
         return cropArrayList;
     }
 }

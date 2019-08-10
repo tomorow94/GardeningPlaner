@@ -8,7 +8,7 @@ public class MixedCultureEvaluator {
     private Object[] crops;
 
     public MixedCultureEvaluator(){
-        crops = new CropList().getCropArrayList().toArray();
+        crops = new CropList().get().toArray();
     }
 
     public CropTolerance evaluateTolerance(Crop crop1, Crop crop2){
