@@ -5,7 +5,7 @@ import de.gardeningplaner.model.crops.CropTolerance;
 
 public class MixedCultureEvaluator {
 
-    private static final String[] crops = {
+    private static final String[] crops = { // placeholder solution till crop classes are implemented
             "Aubergine",        //0
             "Buschbohne",       //1
             "Chinakohl",        //2
@@ -23,7 +23,7 @@ public class MixedCultureEvaluator {
             "Lauch",            //14
             "Mangold",          //15
             "Meerrettich",      //16
-            "Karrotte",         //17
+            "Karotte",         //17
             "Radieschen",       //18
             "Rhabarber",        //19
             "Rote Bete",        //20
@@ -35,8 +35,8 @@ public class MixedCultureEvaluator {
     };
 
     CropTolerance evaluateTolerance(Crop crop1, Crop crop2){
-        String crop1Name = crop1.getName();
-        String crop2Name = crop2.getName();
+        String crop1Name = crop1.getName(); // placeholder solution till crop classes are implemented
+        String crop2Name = crop2.getName(); // placeholder solution till crop classes are implemented
 
         if (crop1Name.equals(crops[0])){
             if(crop2Name.equals(crops[11])
