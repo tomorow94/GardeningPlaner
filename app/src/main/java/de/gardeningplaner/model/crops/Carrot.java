@@ -1,5 +1,5 @@
 package de.gardeningplaner.model.crops;
 
 public class Carrot extends Crop {
-    public Carrot() { super(RootLevel.MEDIUM, 50, NutrientNeeds.HIGH, "A");}
+    public Carrot() { super(RootLevel.DEEP, 10, NutrientNeeds.MEDIUM, "Karotte");}
 }
