@@ -35,7 +35,7 @@ import de.gardeningplaner.model.crops.Zucchini;
 public class CropList extends ArrayList implements Serializable{
     private ArrayList<Crop> cropArrayList;
 
-    CropList() {
+    public CropList() {
         this.cropArrayList = new ArrayList<>();
 
         this.cropArrayList.add(new Aubergine());        //0
