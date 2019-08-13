@@ -17,12 +17,13 @@ addons:
 before_script:
   - chmod +x gradlew
 
-# the actual script: build the project, test code with jacoco, code quality with sonarcloud
+# the actual script: create test report with jacoco, code quality with sonarcloud and try to build the project
 script:
   - echo "starting script"
-  - ./gradlew clean build
-  - ./gradlew test jacoco
+  - ./gradlew testDebugUnitTest JacocoTestReport
   - ./gradlew sonarqube
+  - ./gradlew clean build
+
 
 # send success message to discord
 after_success:
