@@ -156,13 +156,13 @@ n/a
 n/a
 ## 13. Management, Process and Procedures
 ### 13.1 Measuring and Assessing the Extent of Testing
-n/a
+Test-Coverage is evaluated by sonarcloud though testreports delivered by jacoco running on travis ci
 ### 13.2 Assessing the Deliverables of this Test Plan
 n/a
 ### 13.3 Problem Reporting, Escalation, and Issue Resolution
-n/a
+At the moment the only issues being tackled are the ones reported here though GitHub and automaticaly analysed by sonarcloud
 ### 13.4 Managing Test Cycles
-n/a
+Testing is automated. On every commit to GitHub a build and test process is started using travis ci
 ### 13.5 Traceability Strategies
 n/a
 ### 13.6 Approval and Signoff
