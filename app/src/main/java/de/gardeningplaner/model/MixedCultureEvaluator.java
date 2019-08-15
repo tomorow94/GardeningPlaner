@@ -25,40 +25,20 @@ public class MixedCultureEvaluator {
             return evaluateChineseCabbage(crop2);
         }
 
-        if (crop1.equals(crops[3]) && (crop2.equals(crops[7])
-                || crop2.equals(crops[11])
-                || crop2.equals(crops[14])
-                || crop2.equals(crops[23]))) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[3])){
+            return evaluateEndive(crop2);
         }
 
         if (crop1.equals(crops[4])){
             return evaluatePea(crop2);
         }
 
-        if (crop1.equals(crops[5]) && (crop2.equals(crops[1])
-                || crop2.equals(crops[6])
-                || crop2.equals(crops[10])
-                || crop2.equals(crops[11])
-                || crop2.equals(crops[13])
-                || crop2.equals(crops[14])
-                || crop2.equals(crops[18])
-                || crop2.equals(crops[20])
-                || crop2.equals(crops[22])
-                || crop2.equals(crops[25]))) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[5])){
+            return evaluateStrawberry(crop2);
         }
 
-        if (crop1.equals(crops[6]) && (crop2.equals(crops[5])
-                || crop2.equals(crops[7])
-                || crop2.equals(crops[11])
-                || crop2.equals(crops[12])
-                || crop2.equals(crops[14])
-                || crop2.equals(crops[18])
-                || crop2.equals(crops[22])
-                || crop2.equals(crops[23])
-                || crop2.equals(crops[25]))) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[6])){
+            return evaluateLambsLettuce(crop2);
         }
 
         if (crop1.equals(crops[7])){
@@ -85,21 +65,8 @@ public class MixedCultureEvaluator {
             return evaluateKohlrabi(crop2);
         }
 
-        if (crop1.equals(crops[13]) && (crop2.equals(crops[0])
-                || crop2.equals(crops[1])
-                || crop2.equals(crops[4])
-                || crop2.equals(crops[5])
-                || crop2.equals(crops[7])
-                || crop2.equals(crops[8])
-                || crop2.equals(crops[11])
-                || crop2.equals(crops[12])
-                || crop2.equals(crops[14])
-                || crop2.equals(crops[17])
-                || crop2.equals(crops[18])
-                || crop2.equals(crops[19])
-                || crop2.equals(crops[23])
-                || crop2.equals(crops[25]))) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[13])){
+            return evaluateLettuce(crop2);
         }
 
         if (crop1.equals(crops[14])){
@@ -110,8 +77,8 @@ public class MixedCultureEvaluator {
             return evaluateChard(crop2);
         }
 
-        if (crop1.equals(crops[16]) && crop2.equals(crops[9])) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[16])){
+            return evaluateHorseradish(crop2);
         }
 
         if (crop1.equals(crops[17])){
@@ -122,11 +89,8 @@ public class MixedCultureEvaluator {
             return evaluateRadish(crop2);
         }
 
-        if (crop1.equals(crops[19]) && (crop2.equals(crops[1])
-                || crop2.equals(crops[11])
-                || crop2.equals(crops[13])
-                || crop2.equals(crops[22]))) {
-            return CropTolerance.SUPPORTIVE;
+        if (crop1.equals(crops[19])){
+            return evaluateRhubarb(crop2);
         }
 
         if (crop1.equals(crops[20])){
@@ -326,6 +290,16 @@ public class MixedCultureEvaluator {
         return CropTolerance.NUTRAL;
     }
 
+    private CropTolerance evaluateEndive(Crop crop2) {
+        if (crop2.equals(crops[7])
+                || crop2.equals(crops[11])
+                || crop2.equals(crops[14])
+                || crop2.equals(crops[23])) {
+            return CropTolerance.SUPPORTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
     private CropTolerance evaluateFennel(Crop crop2) {
         if(crop2.equals(crops[3])
                 || crop2.equals(crops[4])
@@ -361,6 +335,13 @@ public class MixedCultureEvaluator {
         return CropTolerance.NUTRAL;
     }
 
+    private CropTolerance evaluateHorseradish(Crop crop2) {
+        if (crop2.equals(crops[9])){
+            return CropTolerance.SUPPORTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
     private CropTolerance evaluateKohlrabi(Crop crop2) {
         if(crop2.equals(crops[1])
                 || crop2.equals(crops[4])
@@ -376,6 +357,21 @@ public class MixedCultureEvaluator {
         }
         if(crop2.equals(crops[11])){
             return CropTolerance.OBSTRUCTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
+    private CropTolerance evaluateLambsLettuce(Crop crop2) {
+        if ((crop2.equals(crops[5])
+                || crop2.equals(crops[7])
+                || crop2.equals(crops[11])
+                || crop2.equals(crops[12])
+                || crop2.equals(crops[14])
+                || crop2.equals(crops[18])
+                || crop2.equals(crops[22])
+                || crop2.equals(crops[23])
+                || crop2.equals(crops[25]))){
+            return CropTolerance.SUPPORTIVE;
         }
         return CropTolerance.NUTRAL;
     }
@@ -397,6 +393,26 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[20])
                 || crop2.equals(crops[23])){
             return CropTolerance.OBSTRUCTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
+    private CropTolerance evaluateLettuce(Crop crop2) {
+        if ((crop2.equals(crops[0])
+                || crop2.equals(crops[1])
+                || crop2.equals(crops[4])
+                || crop2.equals(crops[5])
+                || crop2.equals(crops[7])
+                || crop2.equals(crops[8])
+                || crop2.equals(crops[11])
+                || crop2.equals(crops[12])
+                || crop2.equals(crops[14])
+                || crop2.equals(crops[17])
+                || crop2.equals(crops[18])
+                || crop2.equals(crops[19])
+                || crop2.equals(crops[23])
+                || crop2.equals(crops[25]))){
+            return CropTolerance.SUPPORTIVE;
         }
         return CropTolerance.NUTRAL;
     }
@@ -486,6 +502,16 @@ public class MixedCultureEvaluator {
         return CropTolerance.NUTRAL;
     }
 
+    private CropTolerance evaluateRhubarb(Crop crop2) {
+        if ((crop2.equals(crops[1])
+                || crop2.equals(crops[11])
+                || crop2.equals(crops[13])
+                || crop2.equals(crops[22]))) {
+            return CropTolerance.SUPPORTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
     private CropTolerance evaluateRunnerBeans(Crop crop2) {
         if(crop2.equals(crops[3])
                 || crop2.equals(crops[6])
@@ -527,6 +553,22 @@ public class MixedCultureEvaluator {
         if(crop2.equals(crops[15])
                 || crop2.equals(crops[20])){
             return CropTolerance.OBSTRUCTIVE;
+        }
+        return CropTolerance.NUTRAL;
+    }
+
+    private CropTolerance evaluateStrawberry(Crop crop2) {
+        if ((crop2.equals(crops[1])
+                || crop2.equals(crops[6])
+                || crop2.equals(crops[10])
+                || crop2.equals(crops[11])
+                || crop2.equals(crops[13])
+                || crop2.equals(crops[14])
+                || crop2.equals(crops[18])
+                || crop2.equals(crops[20])
+                || crop2.equals(crops[22])
+                || crop2.equals(crops[25]))) {
+            return CropTolerance.SUPPORTIVE;
         }
         return CropTolerance.NUTRAL;
     }
