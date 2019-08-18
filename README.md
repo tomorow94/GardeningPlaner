@@ -1,4 +1,4 @@
-# GardeningPlaner
+# Gardening Planner 
 
 [![Build Status](https://travis-ci.org/tomorow94/GardeningPlaner.svg?branch=master)](https://travis-ci.org/tomorow94/GardeningPlaner)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=tomorow94_GardeningPlaner&metric=alert_status)](https://sonarcloud.io/dashboard?id=tomorow94_GardeningPlaner)
