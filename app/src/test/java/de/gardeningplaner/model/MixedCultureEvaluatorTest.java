@@ -13,7 +13,7 @@ public class MixedCultureEvaluatorTest {
 
     @Test
     public void evaluateTolerance_Aubergine_Aubergine_ShouldBeNUTRAL() {
-        CropTolerance expected = CropTolerance.NUTRAL;
+        CropTolerance expected = CropTolerance.NEUTRAL;
         MixedCultureEvaluator evaluator = new MixedCultureEvaluator();
         CropTolerance actual = evaluator.evaluateTolerance(new Aubergine(), new Aubergine());
         assertEquals(expected,actual);
@@ -21,7 +21,7 @@ public class MixedCultureEvaluatorTest {
 
     @Test
     public void evaluateTolerance_Aubergine_BushBean_ShouldBeNUTRAL() {
-        CropTolerance expected = CropTolerance.NUTRAL;
+        CropTolerance expected = CropTolerance.NEUTRAL;
         MixedCultureEvaluator evaluator = new MixedCultureEvaluator();
         CropTolerance actual = evaluator.evaluateTolerance(new Aubergine(), new BushBean());
         assertEquals(expected,actual);
@@ -29,7 +29,7 @@ public class MixedCultureEvaluatorTest {
 
     @Test
     public void evaluateTolerance_Aubergine_ChineseCabbage_ShouldBeNUTRAL() {
-        CropTolerance expected = CropTolerance.NUTRAL;
+        CropTolerance expected = CropTolerance.NEUTRAL;
         MixedCultureEvaluator evaluator = new MixedCultureEvaluator();
         CropTolerance actual = evaluator.evaluateTolerance(new Aubergine(), new ChineseCabbage());
         assertEquals(expected,actual);

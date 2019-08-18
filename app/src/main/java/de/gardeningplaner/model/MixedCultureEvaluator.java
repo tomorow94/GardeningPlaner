@@ -117,7 +117,7 @@ public class MixedCultureEvaluator {
             return evaluateOnion(crop2);
         }
 
-        return CropTolerance.NUTRAL; //default
+        return CropTolerance.NEUTRAL; //default
     }
 
     private CropTolerance evaluateAubergine(Crop crop2) {
@@ -129,7 +129,7 @@ public class MixedCultureEvaluator {
         if(crop2.equals(crops[9])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateBeetroot(Crop crop2) {
@@ -149,7 +149,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[22])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateBushBean(Crop crop2) {
@@ -176,7 +176,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateCabbage(Crop crop2) {
@@ -203,7 +203,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateCarrot(Crop crop2) {
@@ -219,7 +219,7 @@ public class MixedCultureEvaluator {
         if(crop2.equals(crops[21])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateChard(Crop crop2) {
@@ -234,7 +234,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[22])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateChineseCabbage(Crop crop2) {
@@ -249,7 +249,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[18])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateCelery(Crop crop2) {
@@ -267,7 +267,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[21])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateCucumber(Crop crop2) {
@@ -287,7 +287,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[24])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateEndive(Crop crop2) {
@@ -297,7 +297,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[23])) {
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateFennel(Crop crop2) {
@@ -313,7 +313,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[23])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateGarlic(Crop crop2) {
@@ -332,14 +332,14 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[23])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateHorseradish(Crop crop2) {
         if (crop2.equals(crops[9])){
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateKohlrabi(Crop crop2) {
@@ -358,7 +358,7 @@ public class MixedCultureEvaluator {
         if(crop2.equals(crops[11])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateLambsLettuce(Crop crop2) {
@@ -373,7 +373,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25]))){
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateLeek(Crop crop2) {
@@ -394,7 +394,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[23])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateLettuce(Crop crop2) {
@@ -414,7 +414,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25]))){
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateOnion(Crop crop2) {
@@ -435,7 +435,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[23])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluatePea(Crop crop2) {
@@ -459,7 +459,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluatePotato(Crop crop2) {
@@ -477,7 +477,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateRadish(Crop crop2) {
@@ -499,7 +499,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateRhubarb(Crop crop2) {
@@ -509,7 +509,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[22]))) {
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateRunnerBeans(Crop crop2) {
@@ -530,7 +530,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateSpinach(Crop crop2) {
@@ -554,7 +554,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[20])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateStrawberry(Crop crop2) {
@@ -570,7 +570,7 @@ public class MixedCultureEvaluator {
                 || crop2.equals(crops[25]))) {
             return CropTolerance.SUPPORTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 
     private CropTolerance evaluateZucchini(Crop crop2) {
@@ -582,6 +582,6 @@ public class MixedCultureEvaluator {
         if(crop2.equals(crops[8])){
             return CropTolerance.OBSTRUCTIVE;
         }
-        return CropTolerance.NUTRAL;
+        return CropTolerance.NEUTRAL;
     }
 }
