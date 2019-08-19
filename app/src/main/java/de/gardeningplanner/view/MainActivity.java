@@ -8,6 +8,8 @@ import android.widget.Spinner;
 import java.util.List;
 
 import de.gardeningplanner.R;
+import de.gardeningplanner.model.CropList;
+import de.gardeningplanner.model.crops.Crop;
 
 public class MainActivity extends AppCompatActivity {
 
