@@ -13,31 +13,26 @@ addons:
     token:
       secure: $SONAR_TOKEN2
 
+# grand travis ci access to gradlew file
 before_script:
   - chmod +x gradlew
 
+# the actual script: create test report with jacoco, code quality with sonarcloud and try to build the project
 script:
-    - echo "starting script"
-    - ./gradlew clean build
-    - ./gradlew sonarqube
+  - echo "starting script"
+  - ./gradlew testDebugUnitTest JacocoTestReport
+  - ./gradlew sonarqube
+  - ./gradlew clean build
 
+
+# send success message to discord
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh success $WEBHOOK_URL
 
+# send failure message to discord
 after_failure:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
   - ./send.sh failure $WEBHOOK_URL
-
-#unclear if necessary but maybe needed to get a better understanding for automating feature file cucumber tests in the future
-# Emulator Management: Create, Start and Wait
-#before_script:
-#    - echo "Starting emulator"
-#    - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a -c 100M
-#    - emulator -avd test -no-window -skin 768x1280 &
-#    - android-wait-for-emulator
-#    - adb shell input keyevent 82 &
-#    - echo "starting test"
-#    - ./gradlew connectedAndroidTest createDebugCoverageReport coveralls

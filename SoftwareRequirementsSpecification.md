@@ -12,20 +12,20 @@ This SRS describes the Android Application “Gardening Planer”. It contains a
 
 ## <a name="1.2 Scope">1.2 Scope</a>
 
-“Gardening Planer” will be an AndoidApp used to plan your crops you plant in your bed - expecially in view of the 3 year use of topsoil in high beds
+“Gardening Planer” will be an AndroidApp used to plan your crops you plant in your bed - especially in view of the 3 year use of topsoil in high beds
 
 ## <a name="1.3 Definitions, Acronyms and Abbreviations">1.3 Definitions, Acronyms and Abbreviations</a>
 
 n/a: Not Applicable
-<br/>Play Store: Google Play Store 
+<br/>Play Store: Google Play Store
 <br/>tbd: to be determined
 
 ## <a name="1.4 References">1.4 References</a>
 
 [Android Studio](https://developer.android.com/studio/)
-<br/>[GIT](https://git-scm.com/)
-<br/>[GitHub](https://github.com/)
-<br/>[Google Play Store](https://play.google.com/store)
+[GIT](https://git-scm.com/)
+[GitHub](https://github.com/)
+[Google Play Store](https://play.google.com/store)
 
 ## <a name="1.5 Overview">1.5 Overview</a>
 
@@ -37,7 +37,7 @@ The following Chapters describe the vision for the project, the requirements for
 "Gardening Planer" will be an App that helps you to find crops that befitt eachother or at least dont hinder other crops in your bed. In addition the nutrition requirements of the different crops, the depth of the roots and the space the plant will need in grown state will be considered to optimize your yield. The then developed plan for your garden can be saved and can be viewed again and again.
 
 # <a name="2.1 Software">2.2 Software</a>
-"Gardening Planer" will be developed in Java as an application that can run on Android. 
+"Gardening Planer" will be developed in Java as an application that can run on Android.
 
 # <a name="3. Specific Requirements">3. Specific Requirements</a>
 
