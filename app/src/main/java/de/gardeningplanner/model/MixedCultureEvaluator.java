@@ -26,6 +26,7 @@ import de.gardeningplanner.model.crops.Pea;
 import de.gardeningplanner.model.crops.Potato;
 import de.gardeningplanner.model.crops.Radish;
 import de.gardeningplanner.model.crops.Rhubarb;
+import de.gardeningplanner.model.crops.RunnerBeans;
 import de.gardeningplanner.model.crops.Spinach;
 import de.gardeningplanner.model.crops.Strawberry;
 import de.gardeningplanner.model.crops.Zucchini;
@@ -38,8 +39,12 @@ public class MixedCultureEvaluator {
 
 
     public MixedCultureEvaluator(){
-
         crops = new CropList().get().toArray();
+
+        populateToleranceMap();
+    }
+
+    private void populateToleranceMap() {
         toleranceMap.put(new Aubergine(), new Aubergine(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new Beetroot(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new BushBean(), CropTolerance.NEUTRAL);
@@ -62,6 +67,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Aubergine(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Aubergine(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new Spinach(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Aubergine(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Aubergine(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -88,6 +94,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Beetroot(), new Potato(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Beetroot(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Beetroot(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Beetroot(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Beetroot(), new Spinach(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Beetroot(), new Strawberry(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Beetroot(), new Zucchini(), CropTolerance.SUPPORTIVE);
@@ -114,34 +121,36 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new BushBean(), new Potato(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new BushBean(), new Radish(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new BushBean(), new Rhubarb(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new BushBean(), new RunnerBeans(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new BushBean(), new Spinach(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new BushBean(), new Strawberry(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new BushBean(), new Zucchini(), CropTolerance.NEUTRAL);
 
-        toleranceMap.put(new Cabbage(), new Aubergine(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Aubergine(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cabbage(), new Beetroot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new BushBean(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Cabbage(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new BushBean(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Cabbage(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Cabbage(), new Carrot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Celery(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Chard(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new ChineseCabbage(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Cucumber(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Endive(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Celery(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Chard(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new ChineseCabbage(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Cabbage(), new Cucumber(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Endive(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cabbage(), new Fennel(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Garlic(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Garlic(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Cabbage(), new Horseradish(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Kohlrabi(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new LambsLettuce(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Kohlrabi(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Cabbage(), new LambsLettuce(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cabbage(), new Leek(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Lettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Onion(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Pea(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Lettuce(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Onion(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Cabbage(), new Pea(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cabbage(), new Potato(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Radish(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Rhubarb(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Spinach(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cabbage(), new Strawberry(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cabbage(), new Radish(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Rhubarb(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new RunnerBeans(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Spinach(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cabbage(), new Strawberry(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cabbage(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new Carrot(), new Aubergine(), CropTolerance.NEUTRAL);
@@ -149,58 +158,60 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Carrot(), new BushBean(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Cabbage(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Carrot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Celery(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Chard(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new ChineseCabbage(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Carrot(), new Celery(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Carrot(), new Chard(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Carrot(), new ChineseCabbage(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Carrot(), new Cucumber(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Endive(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Fennel(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Garlic(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Carrot(), new Garlic(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Carrot(), new Horseradish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Kohlrabi(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new LambsLettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Leek(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Lettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Onion(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Pea(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Potato(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Carrot(), new Radish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Carrot(), new Leek(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Carrot(), new Lettuce(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Carrot(), new Onion(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Carrot(), new Pea(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Carrot(), new Potato(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Carrot(), new Radish(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Carrot(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Carrot(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Carrot(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new Celery(), new Aubergine(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Beetroot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new BushBean(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Cabbage(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Carrot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Celery(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new BushBean(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Celery(), new Cabbage(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Celery(), new Carrot(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Celery(), new Celery(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Celery(), new Chard(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new ChineseCabbage(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Cucumber(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new ChineseCabbage(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Celery(), new Cucumber(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Celery(), new Endive(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Fennel(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Garlic(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Horseradish(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Kohlrabi(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new Kohlrabi(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Celery(), new LambsLettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Leek(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new Leek(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Celery(), new Lettuce(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Onion(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Pea(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Potato(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new Potato(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Celery(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Rhubarb(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Celery(), new Spinach(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Celery(), new RunnerBeans(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Celery(), new Spinach(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Celery(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Celery(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new Chard(), new Aubergine(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Chard(), new Beetroot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Chard(), new BushBean(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Chard(), new Beetroot(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Chard(), new BushBean(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Chard(), new Cabbage(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Chard(), new Carrot(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Chard(), new Carrot(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Chard(), new Celery(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Chard(), new Chard(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Chard(), new ChineseCabbage(), CropTolerance.NEUTRAL);
@@ -216,17 +227,18 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Chard(), new Onion(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Chard(), new Pea(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Chard(), new Potato(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Chard(), new Radish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Chard(), new Radish(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Chard(), new Rhubarb(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Chard(), new Spinach(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Chard(), new RunnerBeans(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Chard(), new Spinach(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Chard(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Chard(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new ChineseCabbage(), new Aubergine(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new Beetroot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new BushBean(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Cabbage(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Carrot(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new BushBean(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new ChineseCabbage(), new Cabbage(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new ChineseCabbage(), new Carrot(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new ChineseCabbage(), new Celery(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new Chard(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new ChineseCabbage(), CropTolerance.NEUTRAL);
@@ -237,42 +249,44 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new ChineseCabbage(), new Horseradish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new Kohlrabi(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new LambsLettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Leek(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new Leek(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new ChineseCabbage(), new Lettuce(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new Onion(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Pea(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new Pea(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new ChineseCabbage(), new Potato(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Radish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new Radish(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new ChineseCabbage(), new Rhubarb(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new ChineseCabbage(), new Spinach(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new RunnerBeans(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new ChineseCabbage(), new Spinach(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new ChineseCabbage(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new ChineseCabbage(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new Cucumber(), new Aubergine(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Beetroot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new BushBean(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Cabbage(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Beetroot(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cucumber(), new BushBean(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cucumber(), new Cabbage(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cucumber(), new Carrot(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Celery(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Celery(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cucumber(), new Chard(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new ChineseCabbage(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Cucumber(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Endive(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Fennel(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Garlic(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Fennel(), CropTolerance.SUPPORTIVE);
+        toleranceMap.put(new Cucumber(), new Garlic(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cucumber(), new Horseradish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Kohlrabi(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new LambsLettuce(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Leek(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Lettuce(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Onion(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Onion(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cucumber(), new Pea(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Potato(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Radish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Potato(), CropTolerance.OBSTRUCTIVE);
+        toleranceMap.put(new Cucumber(), new Radish(), CropTolerance.OBSTRUCTIVE);
         toleranceMap.put(new Cucumber(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new RunnerBeans(), CropTolerance.SUPPORTIVE);
         toleranceMap.put(new Cucumber(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Cucumber(), new Strawberry(), CropTolerance.NEUTRAL);
-        toleranceMap.put(new Cucumber(), new Zucchini(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Cucumber(), new Zucchini(), CropTolerance.OBSTRUCTIVE);
 
         toleranceMap.put(new Endive(), new Aubergine(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Beetroot(), CropTolerance.NEUTRAL);
@@ -296,6 +310,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Endive(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Endive(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Endive(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -322,6 +337,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Fennel(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Fennel(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Fennel(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Fennel(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Fennel(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Fennel(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Fennel(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -348,6 +364,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Garlic(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Garlic(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Garlic(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Garlic(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Garlic(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Garlic(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Garlic(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -374,6 +391,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Horseradish(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Horseradish(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Horseradish(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Horseradish(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Horseradish(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Horseradish(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Horseradish(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -400,6 +418,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Kohlrabi(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Kohlrabi(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Kohlrabi(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Kohlrabi(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Kohlrabi(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Kohlrabi(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Kohlrabi(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -426,6 +445,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new LambsLettuce(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new LambsLettuce(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new LambsLettuce(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new LambsLettuce(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new LambsLettuce(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new LambsLettuce(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new LambsLettuce(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -452,6 +472,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Leek(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Leek(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Leek(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Leek(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Leek(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Leek(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Leek(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -478,6 +499,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Lettuce(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Lettuce(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Lettuce(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Lettuce(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Lettuce(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Lettuce(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Lettuce(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -504,6 +526,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Onion(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Onion(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Onion(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Onion(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Onion(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Onion(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Onion(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -530,6 +553,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Pea(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Pea(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Pea(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Pea(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Pea(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Pea(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Pea(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -556,6 +580,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Potato(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Potato(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Potato(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Potato(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Potato(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Potato(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Potato(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -582,6 +607,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Radish(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Radish(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Radish(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Radish(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Radish(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Radish(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Radish(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -608,9 +634,37 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Rhubarb(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Rhubarb(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Rhubarb(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Rhubarb(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Rhubarb(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Rhubarb(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Rhubarb(), new Zucchini(), CropTolerance.NEUTRAL);
+
+        toleranceMap.put(new RunnerBeans(), new Aubergine(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Beetroot(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new BushBean(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Cabbage(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Carrot(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Celery(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Chard(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new ChineseCabbage(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Cucumber(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Endive(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Fennel(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Garlic(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Horseradish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Kohlrabi(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new LambsLettuce(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Leek(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Lettuce(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Onion(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Pea(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Potato(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Radish(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new RunnerBeans(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Spinach(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Strawberry(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new RunnerBeans(), new Zucchini(), CropTolerance.NEUTRAL);
 
         toleranceMap.put(new Spinach(), new Aubergine(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Beetroot(), CropTolerance.NEUTRAL);
@@ -634,6 +688,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Spinach(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Spinach(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Spinach(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -660,6 +715,7 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Strawberry(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Strawberry(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Strawberry(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Strawberry(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Strawberry(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Strawberry(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Strawberry(), new Zucchini(), CropTolerance.NEUTRAL);
@@ -686,9 +742,14 @@ public class MixedCultureEvaluator {
         toleranceMap.put(new Zucchini(), new Potato(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Zucchini(), new Radish(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Zucchini(), new Rhubarb(), CropTolerance.NEUTRAL);
+        toleranceMap.put(new Zucchini(), new RunnerBeans(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Zucchini(), new Spinach(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Zucchini(), new Strawberry(), CropTolerance.NEUTRAL);
         toleranceMap.put(new Zucchini(), new Zucchini(), CropTolerance.NEUTRAL);
+    }
+
+    public CropTolerance getTolerance(Crop crop1, Crop crop2){
+        return (CropTolerance) toleranceMap.get(crop1, crop2);
     }
 
     public CropTolerance evaluateTolerance(Crop crop1, Crop crop2){
