@@ -44,6 +44,7 @@ public class MixedCultureEvaluatorTest {
 
     @Test
     public void getTolerance_AubergineAndAubergine_NEUTRAL(){
+        evaluator = new MixedCultureEvaluator();
         CropTolerance expected;
         expected = CropTolerance.NEUTRAL;
 
