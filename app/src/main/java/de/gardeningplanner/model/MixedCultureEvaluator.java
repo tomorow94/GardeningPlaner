@@ -2,34 +2,8 @@ package de.gardeningplanner.model;
 
 import org.apache.commons.collections4.map.MultiKeyMap;
 
-import de.gardeningplanner.model.crops.Aubergine;
-import de.gardeningplanner.model.crops.Beetroot;
-import de.gardeningplanner.model.crops.BushBean;
-import de.gardeningplanner.model.crops.Cabbage;
-import de.gardeningplanner.model.crops.Carrot;
-import de.gardeningplanner.model.crops.Celery;
-import de.gardeningplanner.model.crops.Chard;
-import de.gardeningplanner.model.crops.ChineseCabbage;
 import de.gardeningplanner.model.crops.Crop;
 import de.gardeningplanner.model.crops.CropTolerance;
-import de.gardeningplanner.model.crops.Cucumber;
-import de.gardeningplanner.model.crops.Endive;
-import de.gardeningplanner.model.crops.Fennel;
-import de.gardeningplanner.model.crops.Garlic;
-import de.gardeningplanner.model.crops.Horseradish;
-import de.gardeningplanner.model.crops.Kohlrabi;
-import de.gardeningplanner.model.crops.LambsLettuce;
-import de.gardeningplanner.model.crops.Leek;
-import de.gardeningplanner.model.crops.Lettuce;
-import de.gardeningplanner.model.crops.Onion;
-import de.gardeningplanner.model.crops.Pea;
-import de.gardeningplanner.model.crops.Potato;
-import de.gardeningplanner.model.crops.Radish;
-import de.gardeningplanner.model.crops.Rhubarb;
-import de.gardeningplanner.model.crops.RunnerBeans;
-import de.gardeningplanner.model.crops.Spinach;
-import de.gardeningplanner.model.crops.Strawberry;
-import de.gardeningplanner.model.crops.Zucchini;
 
 public class MixedCultureEvaluator {
 
@@ -41,11 +15,7 @@ public class MixedCultureEvaluator {
     }
 
     public CropTolerance getTolerance(Crop crop1, Crop crop2){
-        /*if(toleranceMap.containsKey(crop1.getName(),crop2.getName())){
-        */    return toleranceMap.get(crop1.getName(), crop2.getName());
-        /*}else{
-            return CropTolerance.NEUTRAL;
-        }*/
+        return toleranceMap.get(crop1.getName(), crop2.getName());
     }
 
     private void populateToleranceMap() {
